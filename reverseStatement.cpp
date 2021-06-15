@@ -13,7 +13,10 @@ void reverse(const string& str) {
   if(numOfChars == 1) {
     cout << str << endl;  
   } else {
-    cout << str[numOfChars - 1];   // function recursion reverse(str.substr(0, numOfChars - 1)); } } 
+    cout << str[numOfChars - 1];   
+    // function recursion 
+    reverse(str.substr(0, numOfChars - 1)); } 
+} 
 
 Output
 
